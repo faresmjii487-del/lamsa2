@@ -1,0 +1,323 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------- BACKGROUND ---------------- */
+body {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #222;
+}
+
+/* ---------------- NAVBAR ---------------- */
+nav {
+    width: 100%;
+    background: rgba(11,79,138,0.85);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 16px;
+    text-shadow: 1px 1px 8px rgba(239, 230, 230, 0.5);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* ---------------- PRODUCTS ---------------- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(250, 247, 247, 0.875);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.product-body {
+    padding: 15px;
+}
+
+.product-body h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.product-body p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.price-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0b4f8a;
+}
+
+.btn-add {
+    padding: 7px 12px;
+    border: none;
+    background: #5fb3ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ---------------- CART ---------------- */
+.cart-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    width: 320px;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(254, 253, 253, 0.953);
+    overflow: hidden;
+    transform: translateY(120%);
+    transition: .3s;
+}
+
+.cart-header {
+    padding: 12px;
+    background: #0b4f8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items {
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.cart-footer {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #0b4f8a;
+    color: white;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: rgba(11,79,138,0.85);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px){
+    .hero h1 { font-size: 36px; }
+    .hero p { font-size: 16px; }
+    .products-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+}
+/* ---------------- BACKGROUND لكل الصفحات ---------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("bg.jpg.jpg"); 
+    background-size: cover;     
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #222;
+}
+/* ---------------- BACKGROUND لكل الصفحات ---------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: white;
+}
+/* خلفية لكل الصفحات */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* الهيدر */
+header {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* شبكة المنتجات */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.product {
+   
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+   
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* صفحة تسجيل الدخول */
+.login-box {
+    width: 350px;
+    margin: 80px auto;
+ 
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("bg.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

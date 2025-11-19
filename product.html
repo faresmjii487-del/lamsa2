@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منتجاتنا</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">لمسة</div>
+    <div>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="contact.html">الدعم الفني</a>
+        <a href="chekout.html">الدفع</a>
+        <a href="#" id="langBtn">English</a>
+        
+    </div>
+</nav>
+<header>
+    <h1>متجر البلوفير</h1>
+    <nav>
+        <a href="men.html">رجالي</a>
+        <a href="women.html">نسائي</a>
+        <a href="kids.html">أطفال</a>
+        <a href="offers.html">عروض</a>
+        <a href="login.html">تسجيل دخول</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h2>تصنيفات المنتجات</h2>
+    <div class="products-grid">
+        <!-- مثال تصنيفات -->
+        <a href="products.html#women" class="product-card">
+            <img src="prod4.jpg" alt="Women">
+            <div class="product-body">
+                <h3>نسائي</h3>
+            </div>
+        </a>
+        <a href="products.html#men" class="product-card">
+            <img src="prod1.jpg" alt="Men">
+            <div class="product-body">
+                <h3>رجالي</h3>
+            </div>
+        </a>
+        <a href="products.html#kids" class="product-card">
+            <img src="prod3.jpg" alt="Kids">
+            <div class="product-body">
+                <h3>أطفال</h3>
+            </div>
+        </a>
+    </div>
+
+    <h2 id="women">منتجات نسائية</h2>
+    <div class="products-grid" id="womenProducts"></div>
+
+    <h2 id="men">منتجات رجالية</h2>
+    <div class="products-grid" id="menProducts"></div>
+
+    <h2 id="kids">منتجات للأطفال</h2>
+    <div class="products-grid" id="kidsProducts"></div>
+</section>
+<div class="product-card">
+    <img src="prod1.jpg" alt="بلوفر جميل جدا">
+    <div class="product-body">
+        <h3>بلوفر </h3>
+        <p>بلوفر جوده عاليه</p>
+        <div class="price-add">
+            <span class="price">12.5 د.ك</span>
+            <button class="btn-add" onclick="addToCart(1)">أضف</button>
+        </div>
+    </div>
+</div>
+<div class="product-card">
+    <img src="prod2.jpg" alt="اسم المنتج">
+    <div class="product-body">
+        <h3>بلوفر</h3>
+        <p>.</p>
+        <div class="price-add">
+            <span class="price">12.5 د.ك</span>
+            <button class="btn-add" onclick="addToCart(1)">أضف</button>
+        </div>
+    </div>
+</div>
+<footer>
+    &copy; 2025 متجر البلوفرات - جميع الحقوق محفوظة
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

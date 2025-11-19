@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر البلوفرات</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body
+     html  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("images/bg.jpg"); /* ضع اسم الصورة هنا */
+    background-size: cover;       /* تغطي كامل الصفحة */
+    background-position: center;  /* توسيط الصورة */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* تثبيت الخلفية عند التمرير */
+    color: #222;
+}
+
+<body>
+<style>
+body {
+    color: white;
+    background-color: black; /* عشان يظهر النص الأبيض */
+}
+</style>
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="logo">لمسة</div>
+    <div>
+        <a href="index.html">الرئيسية</a>
+        <a href="product.html">المنتجات</a>
+        <a href="contact.html">الدعم الفني</a>
+        <a href="chekout.html">الدفع</a>
+        <a href="#" id="langBtn">English</a>
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <h1 id="heroTitle">مرحبا بك في متجر البلوفرات</h1>
+    <p id="heroDesc">أفضل خامات — أفضل جودة — أفضل الأسعار</p>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<div class="container">
+    <h2 style="margin-bottom: 25px;" id="productsTitle">منتجاتنا</h2>
+    <div class="products-grid" id="products"></div>
+</div>
+
+<!-- ================= CART ================= -->
+<div class="cart-box" id="cartBox">
+    <div class="cart-header">
+        <span>السلة</span>
+        <span id="closeCart" style="cursor:pointer;">✕</span>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+        <button class="pay-btn" onclick="window.location='checkout.html'">متابعة الدفع</button>
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    &copy; 2025 متجر البلوفرات - جميع الحقوق محفوظة
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

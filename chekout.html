@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدفع</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+body {
+    color: white;
+    background-color: black; /* عشان يظهر النص الأبيض */
+} 
+* {
+    color: white !important;
+}
+
+</style>
+<nav>
+    <div class="logo">لمسة</div>
+    <div>
+        <a href="index.html">الرئيسية</a>
+        <a href="product.html">المنتجات</a>
+        <a href="contact.html">الدعم الفني</a>
+        <a href="chekout.html">الدفع</a>
+        <a href="#" id="langBtn">English</a>
+    </div>
+</nav>
+
+<section class="container">
+    <h2>الدفع عبر KNET</h2>
+    <p>السلة الإجمالية: <span id="totalAmount"></span> د.ك</p>
+    <p>امسح رمز QR للدفع</p>
+    <img src="images/prod1.jpg" alt="QR Code" style="width:300px;">
+    <p>بعد الدفع، اضغط على "تأكيد الدفع"</p>
+    <button class="btn-add" onclick="alert('تم الدفع بنجاح!')">تأكيد الدفع</button>
+</section>
+
+<footer>
+    &copy; 2025 متجر البلوفرات - جميع الحقوق محفوظة
+</footer>
+<script>
+document.getElementById("totalAmount").innerText = localStorage.getItem("cart_total") || 0;
+</script>
+</body>
+</html>
